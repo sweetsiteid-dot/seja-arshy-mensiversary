@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Scrapbook | Seja & Arshy</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="just-the-way-you-are.mp3" type="audio/mpeg">
+</audio>
+
+<!-- LOADER -->
+<div id="loader">
+    <div class="loader-book"></div>
+    <p>Loading memories...</p>
+</div>
+
+<!-- PIN SCREEN -->
+<section id="pinScreen">
+
+    <div class="pin-card">
+
+        <h1>🤍🤍</h1>
+
+        <h2>A Little Place Made For You</h2>
+
+        <p>
+            Enter the secret code
+            to open our scrapbook.
+        </p>
+
+        <input
+            type="password"
+            id="pinInput"
+            maxlength="4"
+            placeholder="••••">
+
+        <button id="unlockBtn">
+            Open Memory
+        </button>
+
+        <p id="pinError"></p>
+
+    </div>
+
+</section>
+
+<!-- MAIN CONTENT -->
+<div id="website">
+
+    <!-- COVER -->
+    <section class="hero">
+
+        <div class="floating-stars"></div>
+
+        <div class="hero-content">
+
+            <span class="badge">
+                Mensiversary Scrapbook
+            </span>
+
+            <h1>
+                Seja
+                <span>♡</span>
+                Arshy
+            </h1>
+
+            <p>
+                Every memory with you
+                deserves its own page.
+            </p>
+
+            <button id="openBookBtn">
+                Open Our Story 📖
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- SCRAPBOOK -->
+    <main id="scrapbook">
+
+        <!-- CHAPTER 1 -->
+        <section class="chapter intro">
+
+            <div class="paper-card">
+
+                <h2>Our Story</h2>
+
+                <p>
+                    This scrapbook contains
+                    little moments that became
+                    some of the happiest parts
+                    of my life.
+                </p>
+
+            </div>
+
+            <div class="cover-photo">
+                <img src="foto1.jpg" alt="">
+            </div>
+
+        </section>
+
+        <!-- CHAPTER 2 : POLAROID MEMORIES -->
+        <section class="chapter memories">
+
+            <h2 class="section-title">
+                Little Moments 📸
+            </h2>
+
+            <div class="polaroid-grid">
+
+                <div class="polaroid rotate-left">
+                    <div class="tape blue"></div>
+                    <img src="foto2.jpg" alt="">
+                    <span>🤍</span>
+                </div>
+
+                <div class="polaroid rotate-right">
+                    <div class="tape pink"></div>
+                    <img src="foto3.jpg" alt="">
+                    <span>i love you</span>
+                </div>
+
+                <div class="polaroid rotate-left">
+                    <div class="tape blue"></div>
+                    <img src="foto4.jpg" alt="">
+                    <span>🤍</span>
+                </div>
+
+                <div class="polaroid rotate-right">
+                    <div class="tape pink"></div>
+                    <img src="foto5.jpg" alt="">
+                    <span>my safe place</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CHAPTER 3 : HIDDEN LETTER -->
+        <section class="chapter letter-section">
+
+            <h2 class="section-title">
+                A Letter For You 💌
+            </h2>
+
+            <div class="envelope-container">
+
+                <div id="openLetter" class="envelope">
+
+                    <div class="envelope-front">
+                        Open Me 🤍
+                    </div>
+
+                </div>
+
+                <div id="letterPaper" class="letter-paper">
+
+                    <h3>
+                        Happy 1st monthsary
+                    </h3>
+
+                    <p>
+                        It’s only been a month, but somehow you’ve
+                        already become such a special part of my days.
+                        Thank you for all the little things you do,
+                        for making me smile, and for always making
+                        everything feel a little better just by being there.
+                    </p>
+
+                    <p>
+                        I’m really happy that it’s you. I hope this is
+                        just the beginning of many more months, memories,
+                        random conversations, silly moments, and everything
+                        in between. I may not always say it, but I really
+                        appreciate having you in my life.
+                    </p>
+
+                    <p>
+                        Happy first month to us, my favorite person.
+                        Here’s to more days, more memories, and hopefully
+                        a lot more “months” together. 🤍
+                    </p>
+
+                    <span>
+                        — with love, Seja
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CHAPTER 4 : FILM ROLL -->
+        <section class="chapter film-section">
+
+            <h2 class="section-title">
+                Our Film Roll 🎞️
+            </h2>
+
+            <div class="film-roll">
+
+                <div class="film-frame">
+                    <img src="foto6.jpg" alt="">
+                </div>
+
+                <div class="film-frame">
+                    <img src="foto7.jpg" alt="">
+                </div>
+
+                <div class="film-frame">
+                    <img src="foto8.jpg" alt="">
+                </div>
+
+            </div>
+
+            <p class="film-caption">
+                Swipe slowly and relive every moment.
+            </p>
+
+        </section>
+
+        <!-- CHAPTER 5 : QUIZ -->
+        <section class="chapter quiz-section">
+
+            <h2 class="section-title">
+                Memory Check 🫶
+            </h2>
+
+            <div class="quiz-box">
+
+                <div class="question">
+
+                    <p>
+                        When did we officially start dating?
+                    </p>
+
+                    <input
+                        type="text"
+                        id="answer1"
+                        placeholder="DD Month YYYY">
+
+                </div>
+
+                <div class="question">
+
+                    <p>
+                        How much do you really love me?
+                    </p>
+
+                    <input
+                        type="text"
+                        id="answer2"
+                        placeholder="your answer 🤍">
+
+                </div>
+
+                <button id="checkQuiz">
+                    Unlock Special Memory ✨
+                </button>
+
+                <p id="quizResult"></p>
+
+            </div>
+
+        </section>
+
+        <!-- CHAPTER 6 : SPECIAL MEMORY -->
+        <section id="specialMemory" class="chapter special-memory">
+
+            <h2 class="section-title">
+                Special Memory 🤍
+            </h2>
+
+            <div class="memory-reveal">
+
+                <div class="blur-photo">
+                    <img id="specialPhoto" src="foto9.jpg" alt="">
+                </div>
+
+                <button id="revealBtn">
+                    Reveal Memory ✨
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- CHAPTER 7 : RELATIONSHIP COUNTER -->
+        <section class="chapter counter-section">
+
+            <h2 class="section-title">
+                Since 27 August 2026 ⏳
+            </h2>
+
+            <div class="counter-card">
+
+                <div class="counter-item">
+                    <h3 id="days">0</h3>
+                    <span>Days</span>
+                </div>
+
+                <div class="counter-item">
+                    <h3 id="hours">0</h3>
+                    <span>Hours</span>
+                </div>
+
+                <div class="counter-item">
+                    <h3 id="minutes">0</h3>
+                    <span>Minutes</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CHAPTER 8 : FINAL PHOTO -->
+        <section class="chapter ending-photo">
+
+            <div class="final-card">
+
+                <img src="foto10.jpg" alt="">
+
+                <h2>
+                    You Are My Favorite Chapter
+                </h2>
+
+                <p>
+                    And at the end of the day, through everything,
+                    I still choose you and I still love you.
+                </p>
+
+                <p>
+                    Thank you for being here and for making this past
+                    month so special. I’m really glad I got to spend
+                    it with you. Happy one month, Sayang.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CHAPTER 9 : SECRET MESSAGE -->
+        <section class="chapter secret-section">
+
+            <h2 class="section-title">
+                Hidden Message 🌟
+            </h2>
+
+            <p class="hint-text">
+                ✨ Ada pesan rahasia yang sedang menunggu.
+                Coba sentuh semua bintang untuk menemukannya.
+            </p>
+
+            <p id="starProgress">
+                Find all the stars (0/5)
+            </p>
+
+            <div class="stars-box">
+
+                <div class="star secret-star">⭐</div>
+                <div class="star secret-star">⭐</div>
+                <div class="star secret-star">⭐</div>
+                <div class="star secret-star">⭐</div>
+                <div class="star secret-star">⭐</div>
+
+            </div>
+
+            <div id="secretMessage">
+
+                <p>
+                    Aku akan tetap memilihmu,
+                    bahkan ketika dunia sedang
+                    tidak baik-baik saja.
+                </p>
+
+                <h3>
+                    💝🤍
+                </h3>
+
+            </div>
+
+        </section>
+
+        <!-- ENDING -->
+        <section class="chapter ending">
+
+            <div class="ending-card">
+
+                <h2>
+                    Happy 1st Monthsary
+                </h2>
+
+                <p>
+                    Thank you for being here
+                    and for making this past month
+                    so special.
+                </p>
+
+                <button id="replayBtn">
+                    Replay Memories 📖
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+                  </html>
