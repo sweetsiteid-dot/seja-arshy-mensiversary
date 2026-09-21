@@ -142,13 +142,13 @@ checkQuiz.addEventListener("click", () => {
 
     /*
        QUESTION 2
-       How much do you really love me?
+       Who is the person who loves you the most?
     */
 
     const correctLove =
-        a2 === "i love you" ||
-        a2 === "i love you so much" ||
-        a2 === "so much" ||
+        a2 === "seja" ||
+        a2 === "eja" ||
+        a2 === "seja aresh" ||
         a2 === "very much" ||
         a2 === "a lot" ||
         a2 === "sangat mencintaimu" ||
